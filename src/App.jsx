@@ -5,20 +5,19 @@ import './App.css';
 import Blog from './components/Blog/Blog';
 import Bookmark from './components/Bookmarks/Bookmark';
 import Nav from './components/Nav/Nav';
+import Questions from './components/Questions/Questions';
 import TimeCounter from './components/Time_counter/TimeCounter';
 
 function App() {
 	const [currentReadTime, setCurrentReadTime] = useState(0);
-
 	const handleReadTime = (time) => {
 		setCurrentReadTime(currentReadTime + time);
 	};
 
-	let [bookmarkItems, setBookmarkItems] = useState([]);
-
+	const [bookmarkItems, setBookmarkItems] = useState([]);
 	const bookmarkHandler = (title) => {
-		const isPresent = bookmarkItems.find((bookmarkItem) => bookmarkItem === title);
-		if (!isPresent) {
+		const isMarked = bookmarkItems.find((bookmarkItem) => bookmarkItem === title);
+		if (!isMarked) {
 			const newBookmarkItems = [...bookmarkItems, title];
 			setBookmarkItems(newBookmarkItems);
 		} else {
@@ -46,6 +45,7 @@ function App() {
 					<Bookmark bookmarkItems={bookmarkItems}></Bookmark>
 				</div>
 			</div>
+			<Questions></Questions>
 			<ToastContainer
 				position='bottom-center'
 				autoClose={2000}
