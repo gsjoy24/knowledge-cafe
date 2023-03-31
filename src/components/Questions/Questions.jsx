@@ -3,6 +3,7 @@ import React from 'react';
 const Questions = () => {
 	return (
 		<div className='max-w-4xl m-auto p-4'>
+			<h2 className='text-5xl font-semibold text-center mb-10'>Question Answers</h2>
 			{/* first question */}
 			<div className='question-box mb-8'>
 				<p className='question text-xl font-bold mb-2'>1. What is the difference between props and state?</p>
@@ -48,7 +49,11 @@ const Questions = () => {
 			{/* fourth question */}
 			<div className='question-box mb-8'>
 				<p className='question text-xl font-bold mb-2'>4. How does React work?</p>
-				<p className='answer'>React basically divides an web page to multiple reusable components. The components are similar as javascript function. React create a virtual DOM tree, so that it can change or rerender every efficient element in the html node. </p>
+				<p className='answer'>
+					React basically divides an web page to multiple reusable components. The components are similar as javascript
+					function. React create a virtual DOM tree, so that it can change or rerender every efficient element in the
+					html node. React finds out what changes have been made, and changes only what needs to be changed.
+				</p>
 			</div>
 		</div>
 	);
