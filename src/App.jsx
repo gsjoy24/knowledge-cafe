@@ -16,8 +16,22 @@ function App() {
 
 	let [bookmarkItems, setBookmarkItems] = useState([]);
 	const bookmarkHandler = (title) => {
-		const newBookmarkItems = [...bookmarkItems, title];
-		setBookmarkItems(newBookmarkItems);
+		const isPresent = bookmarkItems.find((bookmarkItem) => bookmarkItem === title);
+		if (!isPresent) {
+			const newBookmarkItems = [...bookmarkItems, title];
+			setBookmarkItems(newBookmarkItems);
+		} else {
+			toast('📢 Hey! You have already added this.', {
+				position: 'bottom-center',
+				autoClose: 2000,
+				hideProgressBar: true,
+				closeOnClick: false,
+				pauseOnHover: true,
+				draggable: true,
+				progress: undefined,
+				theme: 'dark'
+			});
+		}
 	};
 	return (
 		<div className='App'>
@@ -31,6 +45,17 @@ function App() {
 					<Bookmark bookmarkItems={bookmarkItems}></Bookmark>
 				</div>
 			</div>
+			<ToastContainer
+				position='bottom-center'
+				autoClose={2000}
+				hideProgressBar
+				newestOnTop={false}
+				closeOnClick={false}
+				rtl={false}
+				pauseOnFocusLoss
+				draggable
+				pauseOnHover
+			/>
 		</div>
 	);
 }
