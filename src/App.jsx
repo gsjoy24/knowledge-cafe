@@ -15,6 +15,7 @@ function App() {
 	};
 
 	let [bookmarkItems, setBookmarkItems] = useState([]);
+
 	const bookmarkHandler = (title) => {
 		const isPresent = bookmarkItems.find((bookmarkItem) => bookmarkItem === title);
 		if (!isPresent) {
@@ -38,7 +39,7 @@ function App() {
 			<Nav></Nav>
 			<hr />
 			<div className='my-10 flex lg:flex-row flex-col justify-around'>
-				<Blog handleReadTime={handleReadTime} bookmarkHandler={bookmarkHandler}></Blog>
+				<Blog handleReadTime={handleReadTime} bookmarkHandler={bookmarkHandler} bookmarkItems={bookmarkItems}></Blog>
 				<hr className='block lg:hidden my-3 mx-8 h-[2px] bg-gray-200' />
 				<div className='max-h-[90vh] sticky top-2 left-0'>
 					<TimeCounter currentReadTime={currentReadTime}></TimeCounter>

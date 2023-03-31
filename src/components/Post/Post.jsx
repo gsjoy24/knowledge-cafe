@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookmark } from '@fortawesome/free-solid-svg-icons';
 
-const Post = ({ post, handleReadTime, bookmarkHandler }) => {
+const Post = ({ post, handleReadTime, bookmarkHandler, bookmarkItems }) => {
 	const { author, author_img, blog_img, blog_title, read_time, publish_date, tags } = post;
 	return (
 		<div className='max-w-[650px] p-3 m-auto lg:m-0'>
@@ -22,17 +22,27 @@ const Post = ({ post, handleReadTime, bookmarkHandler }) => {
 				<div>
 					<p className='text-sm font-semibold text-zinc-500'>
 						0{read_time} min read
-						<FontAwesomeIcon
-							onClick={() => bookmarkHandler(blog_title)}
-							className='ml-2 cursor-pointer '
-							icon={faBookmark}
-						/>
+						{bookmarkItems.find((bookmarkItem) => bookmarkItem === blog_title) ? (
+							<FontAwesomeIcon
+								onClick={() => bookmarkHandler(blog_title)}
+								className='ml-2 cursor-pointer text-violet-600'
+								icon={faBookmark}
+							/>
+						) : (
+							<FontAwesomeIcon
+								onClick={() => bookmarkHandler(blog_title)}
+								className='ml-2 cursor-pointer'
+								icon={faBookmark}
+							/>
+						)}
 					</p>
 				</div>
 			</div>
 			<h1 className='text-3xl font-bold my-4'>{blog_title}</h1>
 			{tags.map((tag) => (
-				<span key={tag} className='mr-3 text-sm text-slate-500'>#{tag}</span>
+				<span key={tag} className='mr-3 text-sm text-slate-500'>
+					#{tag}
+				</span>
 			))}
 			<button
 				onClick={() => handleReadTime(read_time)}

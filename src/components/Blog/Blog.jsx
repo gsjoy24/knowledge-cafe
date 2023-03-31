@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Post from '../Post/Post';
 
-const Blog = ({ handleReadTime, bookmarkHandler }) => {
+const Blog = ({ handleReadTime, bookmarkHandler, bookmarkItems }) => {
 	const [posts, setPosts] = useState([]);
 
 	useEffect(() => {
@@ -13,7 +13,12 @@ const Blog = ({ handleReadTime, bookmarkHandler }) => {
 	return (
 		<div>
 			{posts.map((post) => (
-				<Post bookmarkHandler={bookmarkHandler} handleReadTime={handleReadTime} post={post} key={post.id}></Post>
+				<Post
+					bookmarkHandler={bookmarkHandler}
+					handleReadTime={handleReadTime}
+					post={post}
+					bookmarkItems={bookmarkItems}
+					key={post.id}></Post>
 			))}
 		</div>
 	);
