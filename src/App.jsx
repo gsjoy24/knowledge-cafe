@@ -4,6 +4,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
 import Blog from './components/Blog/Blog';
 import Bookmark from './components/Bookmarks/Bookmark';
+import Footer from './components/Footer/Footer';
 import Nav from './components/Nav/Nav';
 import Questions from './components/Questions/Questions';
 import TimeCounter from './components/Time_counter/TimeCounter';
@@ -46,6 +47,7 @@ function App() {
 				</div>
 			</div>
 			<Questions></Questions>
+			<Footer></Footer>
 			<ToastContainer
 				position='bottom-center'
 				autoClose={2000}
