@@ -3,40 +3,40 @@
 		"id": "6425b78c4c347196d1dd254d",
 		"author": "Heidi Avila",
 		"author_img": "https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?w=900&t=st=1680202857~exp=1680203457~hmac=eb3417d8b511234c1add1cf683a3bea408872d6f998a2baaf4292376673a3bbf",
-		"blog_img": "https://img.freepik.com/free-photo/female-hand-typing-keyboard-laptop_1150-15742.jpg?w=900&t=st=1680202482~exp=1680203082~hmac=dee0f4f13113a360c2f07c8fa6d7331cb54aff83caa38ae5b5d9da65ba0fb8b1",
+		"blog_img": "https://i.pinimg.com/736x/28/11/62/281162bb024cf7e2847cc76160b744dc.jpg",
 		"blog_title": "What is Web Development?",
 		"read_time": 7,
 		"publish_date": "Mar 31 (4 Days ago)",
-		"tags": [ "beginners","programming"]
+		"tags": ["beginners", "programming"]
 	},
 	{
 		"id": "6425b78c2bbb179925889b55",
 		"author": "Conner Noel",
 		"author_img": "https://img.freepik.com/free-photo/indoor-shot-beautiful-happy-african-american-woman-smiling-cheerfully-keeping-her-arms-folded-relaxing-indoors-after-morning-lectures-university_273609-1270.jpg?w=900&t=st=1680202916~exp=1680203516~hmac=d319b49d0b3429e25b695713b897c2711ceec533b0f5b3a1fd8d23fda5a90b20",
 		"blog_title": "What is programming?",
-		"blog_img": "https://img.freepik.com/premium-photo/real-estate-agents-are-carrying-housing-model-project-be-forwarded-customers-as-home-delivery-real-estate-trading-ideas-bank-loans-buying-selling-houses-land_528263-3023.jpg?w=900",
+		"blog_img": "https://app.programming-hero.com/thumbnail.png",
 		"read_time": 5,
 		"publish_date": "Mar 31 (4 Days ago)",
-		"tags": [ "beginners","programming"]
+		"tags": ["beginners", "programming"]
 	},
 	{
 		"id": "6425b78c2d8d7c1ce9570c96",
 		"author": "Stafford Wilcox",
 		"author_img": "https://img.freepik.com/free-photo/close-up-young-successful-man-smiling-camera-standing-casual-outfit-against-blue-background_1258-66609.jpg?w=900&t=st=1680202964~exp=1680203564~hmac=d19b7622d48e6fb7bb40e8ddb5dcd24100242ce755a583fd28eb83105024f261",
 		"blog_title": "How to become a self-taught programmer?",
-		"blog_img": "https://img.freepik.com/premium-psd/modern-devices-dark-mockup_117023-208.jpg?w=900",
+		"blog_img": "https://www.programming-hero.com/blog/assets/images/blog/how-to-become-a-programmer.png",
 		"read_time": 6,
 		"publish_date": "Mar 31 (4 Days ago)",
-		"tags": [ "beginners","programming"]
+		"tags": ["beginners", "programming"]
 	},
 	{
 		"id": "6425b78cee2fbf462e78cc60",
 		"author": "Petersen Bates",
 		"author_img": "https://img.freepik.com/free-photo/handsome-confident-smiling-man-with-hands-crossed-chest_176420-18743.jpg?w=900&t=st=1680203009~exp=1680203609~hmac=25a6819b4d57151b40e3edb48654a974181a3d906ba0abb769bfb44642d72c4c",
-		"blog_title": "How to get your first job as a self-taught programmer?",
-		"blog_img": "https://img.freepik.com/free-photo/top-view-black-man-african-american-hands-typing-computer-keybord-blue-desk-remote-worker-using-pc-working-from-home-browsing-searching-online-web-internet-communication_482257-30133.jpg?w=1060&t=st=1680206895~exp=1680207495~hmac=c23f604253a48e49a22bfa73e4c58a7f0ce2da799427b2643c918e3e144d8638",
+		"blog_title": "How To Earn As A Programmer?",
+		"blog_img": "https://www.programming-hero.com/blog/assets/images/blog/how-to-earn-as-a-programmer-start-earning-now.png",
 		"read_time": 2,
 		"publish_date": "Mar 31 (4 Days ago) ",
-		"tags": [ "beginners","programming"]
+		"tags": ["beginners", "programming"]
 	}
 ]

@@ -11,7 +11,7 @@ const Blog = () => {
 	}, []);
 
 	return (
-		<div className='my-10'>
+		<div >
 			{posts.map((post) => (
 				<Post post={post} key={post.id}></Post>
 			))}

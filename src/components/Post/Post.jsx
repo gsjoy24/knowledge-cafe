@@ -5,7 +5,7 @@ import { faBookmark } from '@fortawesome/free-solid-svg-icons';
 const Post = ({ post }) => {
 	const { author, author_img, blog_img, blog_title, read_time, publish_date, tags } = post;
 	return (
-		<div className='max-w-[650px] p-3'>
+		<div className='max-w-[650px] p-3 m-auto lg:m-0'>
 			{/* blog image */}
 			<img className='w-full rounded-md' src={blog_img} alt='' />
 			{/* blog detail */}
@@ -21,8 +21,8 @@ const Post = ({ post }) => {
 				{/* reading time */}
 				<div>
 					<p className='text-sm font-semibold text-zinc-500'>
-						0{read_time} min read time
-						<FontAwesomeIcon onClick={() => console.log('ee')} className='ml-2' icon={faBookmark} />
+						0{read_time} min read
+						<FontAwesomeIcon onClick={() => console.log('ee')} className='ml-2 cursor-pointer' icon={faBookmark} />
 					</p>
 				</div>
 			</div>
