@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookmark } from '@fortawesome/free-solid-svg-icons';
 
-const Post = ({ post }) => {
+const Post = ({ post, handleReadTime, bookmarkHandler }) => {
 	const { author, author_img, blog_img, blog_title, read_time, publish_date, tags } = post;
 	return (
 		<div className='max-w-[650px] p-3 m-auto lg:m-0'>
@@ -22,15 +22,21 @@ const Post = ({ post }) => {
 				<div>
 					<p className='text-sm font-semibold text-zinc-500'>
 						0{read_time} min read
-						<FontAwesomeIcon onClick={() => console.log('ee')} className='ml-2 cursor-pointer' icon={faBookmark} />
+						<FontAwesomeIcon
+							onClick={() => bookmarkHandler(blog_title)}
+							className='ml-2 cursor-pointer '
+							icon={faBookmark}
+						/>
 					</p>
 				</div>
 			</div>
 			<h1 className='text-3xl font-bold my-4'>{blog_title}</h1>
 			{tags.map((tag) => (
-				<span className='mr-3 text-sm text-slate-500'>#{tag}</span>
+				<span key={tag} className='mr-3 text-sm text-slate-500'>#{tag}</span>
 			))}
-			<button className='text-purple-600 underline font-semibold block mt-4 hover:border-purple-600 border border-solid rounded-md duration-200 active:scale-75 p-2 '>
+			<button
+				onClick={() => handleReadTime(read_time)}
+				className='text-purple-600 underline font-semibold block mt-4 hover:border-purple-600 border border-solid rounded-md duration-200 active:scale-75 p-2 '>
 				Mark as read
 			</button>
 		</div>
